@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SportsBetting</string>
+    <string name="str_liveodds">To view Live odds information and calculate your bet pick your sport</string>
+
+</resources>

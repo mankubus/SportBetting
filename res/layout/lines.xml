@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/llGreyColor">
+        <RelativeLayout
+        android:id="@+id/rlLines1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg" >
+
+         <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="Away:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvHome"
+            android:layout_below="@+id/tvHome"
+            android:layout_marginTop="-3dp"
+            android:text="Home:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvHome"
+            android:layout_alignLeft="@+id/tvHome"
+            android:text="date &amp; time"
+            android:textColor="@color/llGreyColor"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/tvHomeCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAway"
+            android:layout_alignBottom="@+id/tvAway"
+            android:layout_toRightOf="@+id/tvAway"
+            android:text="Command 1"
+            android:textColor="@color/clBlue"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAwayCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvHome"
+            android:layout_alignBottom="@+id/tvHome"
+            android:layout_toRightOf="@+id/tvHome"
+            android:text="Command 2"
+            android:textColor="@color/clOrange"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/tvHomeCommand"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_odds" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/llLines2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlLines1"
+        android:layout_marginTop="1dp" >
+
+        <RadioGroup
+            android:id="@+id/buttongroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" android:background="@color/llGreyColor">
+
+            <com.archystudio.sport.SegmentedControlButton
+                android:id="@+id/option1"
+                android:text="Moneyline" 
+                android:checked="true" 
+                android:layout_width="105dp" 
+                android:layout_height="fill_parent" android:gravity="center_vertical|center_horizontal"/>
+
+            <com.archystudio.sport.SegmentedControlButton
+                android:id="@+id/option2"
+                android:text="Spreadline"
+                android:layout_width="105dp" 
+                android:layout_height="fill_parent" 
+                android:layout_marginLeft="1dp" android:gravity="center_vertical|center_horizontal"/>
+
+            <com.archystudio.sport.SegmentedControlButton
+                android:id="@+id/option3"
+                android:text="Total" 
+                android:layout_width="106dp" 
+             	android:layout_height="fill_parent" 
+             	android:layout_marginLeft="1dp" android:gravity="center_vertical|center_horizontal"/>
+        </RadioGroup>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLines3"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/llLines2" android:background="@drawable/bg" android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/tvBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:text="Your Spreadline bet: 10$"
+                android:layout_marginTop="10dp" android:textColor="@color/llGreyColor" android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvBet"
+                android:layout_below="@+id/tvBet"
+                android:text="and you can win:" android:textColor="@color/llGreyColor" android:textSize="5pt"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLines4"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlLines3" android:background="@color/llBackgroundColor">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Sportbook"
+                android:gravity="center_vertical|center_horizontal" android:textColor="@color/llBackgroundColor" android:background="@color/llGreyColor" android:id="@+id/tvSportbook"/>
+
+            <TextView
+                android:id="@+id/tvAwayC"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tvSportbook"
+                android:background="@color/llGreyColor"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Away"
+                android:textColor="@color/llBackgroundColor" android:layout_marginLeft="1dp"/>
+
+            <TextView
+                android:id="@+id/tvHomeC"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/llGreyColor"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Home"
+                android:textColor="@color/llBackgroundColor" android:layout_toRightOf="@+id/tvAwayC" android:layout_marginLeft="1dp"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvBooks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlLines4" android:background="@drawable/bg">
+        </ListView>
+
+</RelativeLayout>

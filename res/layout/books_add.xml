@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlGBooks"
+    android:layout_height="40dp"
+    android:background="@color/llGreyColor"
+    android:orientation="horizontal" android:layout_width="fill_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rlIMG"
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="false" android:background="@drawable/bg">
+
+        <ImageView
+            android:id="@+id/imgBook1"
+            android:layout_width="76dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlML"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rlIMG" android:layout_marginLeft="1dp" android:background="@drawable/bg">
+
+        <TextView
+            android:id="@+id/tvAwayMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="100$"
+            android:textColor="@color/clOrange"
+            android:textSize="10pt" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTL1"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rlML" android:layout_marginLeft="1dp" android:background="@drawable/bg">
+
+        <TextView
+            android:id="@+id/tvHomeMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="100$"
+            android:textColor="@color/clBlue"
+            android:textSize="10pt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

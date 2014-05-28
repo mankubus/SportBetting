@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlGAdd"
+    android:layout_height="45dp"
+    android:background="@color/llGreyColor"
+    android:orientation="horizontal" android:layout_width="wrap_content">
+    <TextView
+        android:id="@+id/tvGTime"
+        android:layout_width="65dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="Time"
+        android:textColor="@color/llFontColor" android:background="@drawable/bg" android:textSize="7pt" android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/tvGCom2"
+        android:layout_width="110dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvGTime"
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:text="Time"
+        android:textColor="@color/clOrange" android:layout_marginLeft="1px" android:textSize="7pt" android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/tvGCom1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@id/tvGCom2"
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:text="Time"
+        android:textColor="@color/clBlue"
+        android:textSize="7pt" />
+
+</RelativeLayout>

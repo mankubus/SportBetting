@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlGAddC"
+    android:layout_height="30dp"
+    android:background="@color/llFontColor"
+    android:orientation="horizontal" android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/tvGCapt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/llWhiteColor" android:background="@color/llGreyColor" android:textSize="9pt" android:paddingLeft="5dp"/>
+
+</RelativeLayout>

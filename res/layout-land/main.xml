@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvMainOne"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/str_liveodds"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/llGreyColor" android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tvMainOne" >
+
+        <Button
+            android:id="@+id/btn_sportnfl"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/btn_sportnba"
+            android:background="@drawable/sport_nfl" />
+
+        <Button
+            android:id="@+id/btn_sportnba"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_alignBaseline="@+id/btn_sportnfl"
+            android:layout_alignBottom="@+id/btn_sportnfl"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sport_nba" />
+
+        <Button
+            android:id="@+id/btn_sportmlb"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_alignBaseline="@+id/btn_sportnba"
+            android:layout_alignBottom="@+id/btn_sportnba"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btn_sportnba"
+            android:background="@drawable/sport_mlb" />
+
+        <TextView
+            android:id="@+id/tv_nfl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_sportnfl"
+            android:layout_below="@+id/btn_sportnfl"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:text="NFL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <TextView
+            android:id="@+id/tv_nba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_nfl"
+            android:layout_alignBottom="@+id/tv_nfl"
+            android:layout_centerHorizontal="true"
+            android:text="NBA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <TextView
+            android:id="@+id/tv_mlb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_nba"
+            android:layout_alignBottom="@+id/tv_nba"
+            android:layout_alignRight="@+id/btn_sportmlb"
+            android:layout_marginRight="14dp"
+            android:text="MLB"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <Button
+            android:id="@+id/btn_sportnhl"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_alignLeft="@+id/btn_sportnfl"
+            android:layout_below="@+id/tv_nfl"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sport_nhl" />
+
+        <Button
+            android:id="@+id/btn_sportcfl"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_alignBaseline="@+id/btn_sportnhl"
+            android:layout_alignBottom="@+id/btn_sportnhl"
+            android:layout_alignLeft="@+id/btn_sportnba"
+            android:background="@drawable/sport_cfl" />
+
+        <Button
+            android:id="@+id/btn_sportncaaf"
+            android:layout_width="59dp"
+            android:layout_height="54sp"
+            android:layout_alignBaseline="@+id/btn_sportcfl"
+            android:layout_alignBottom="@+id/btn_sportcfl"
+            android:layout_alignLeft="@+id/btn_sportmlb"
+            android:background="@drawable/sport_ncaaf" />
+
+        <TextView
+            android:id="@+id/tv_nhl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_nfl"
+            android:layout_below="@+id/btn_sportnhl"
+            android:layout_marginTop="2dp"
+            android:text="NHL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <TextView
+            android:id="@+id/tv_cfl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_nhl"
+            android:layout_alignBottom="@+id/tv_nhl"
+            android:layout_centerHorizontal="true"
+            android:text="CFL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <Button
+            android:id="@+id/btn_sportsoccer"
+            android:layout_width="59sp"
+            android:layout_height="54sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sport_soccer" />
+
+        <Button
+            android:id="@+id/btn_sportncaab"
+            android:layout_width="59sp"
+            android:layout_height="54sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_sportncaaf"
+            android:background="@drawable/sport_ncaab" />
+
+        <TextView
+            android:id="@+id/tv_soccer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_sportnhl"
+            android:layout_alignParentRight="true"
+            android:text="Soccer"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <TextView
+            android:id="@+id/tv_ncaaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_cfl"
+            android:layout_alignBottom="@+id/tv_cfl"
+            android:layout_alignRight="@+id/btn_sportncaaf"
+            android:text="NCAAF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+
+        <TextView
+            android:id="@+id/tv_ncaab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_ncaaf"
+            android:layout_alignBottom="@+id/tv_ncaaf"
+            android:layout_alignParentRight="true"
+            android:text="NCAAB"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/llGreyColor" />
+    </RelativeLayout>
+
+</RelativeLayout>

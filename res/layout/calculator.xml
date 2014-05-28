@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/llGreyColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlCalc"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg" >
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="Away:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvHome"
+            android:layout_below="@+id/tvHome"
+            android:layout_marginTop="-3dp"
+            android:text="Home:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvHome"
+            android:layout_alignLeft="@+id/tvHome"
+            android:text="date &amp; time"
+            android:textColor="@color/llGreyColor"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/tvHomeCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAway"
+            android:layout_alignBottom="@+id/tvAway"
+            android:layout_toRightOf="@+id/tvAway"
+            android:text="Command 1"
+            android:textColor="@color/clBlue"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAwayCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvHome"
+            android:layout_alignBottom="@+id/tvHome"
+            android:layout_toRightOf="@+id/tvHome"
+            android:text="Command 2"
+            android:textColor="@color/clOrange"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/tvHomeCommand"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_odds" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCalc2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlCalc"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="Enter your bet and calculate the best:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCalc3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlCalc2"
+        android:layout_marginTop="1dp"
+        android:background="@color/llLightBlue" >
+
+        <EditText
+            android:id="@+id/etML"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etSL"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etML"
+            android:layout_alignBottom="@+id/etML"
+            android:layout_centerHorizontal="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etTL"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etSL"
+            android:layout_alignBottom="@+id/etSL"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_C_ML"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etSL"
+            android:layout_alignLeft="@+id/etML"
+            android:layout_marginBottom="12dp"
+            android:text="ML"
+            android:textColor="@color/clBlue"
+            android:textSize="35dp" android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_C_SL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_C_ML"
+            android:layout_alignBottom="@+id/tv_C_ML"
+            android:layout_centerHorizontal="true"
+            android:text="SL"
+            android:textColor="@color/clBlue"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_C_TL"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_C_SL"
+            android:layout_alignBottom="@+id/tv_C_SL"
+            android:layout_alignLeft="@+id/etTL"
+            android:text="Total"
+            android:textColor="@color/clBlue"
+            android:textSize="35dp" android:gravity="center_horizontal"/>
+
+        <ImageView
+            android:id="@+id/imgCalculate"
+            android:layout_width="274dp"
+            android:layout_height="81dp"
+            android:layout_below="@+id/etML"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/button_calc_big" android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlOdds"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rlCapt"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+       <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="Away:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvHome"
+            android:layout_below="@+id/tvHome"
+            android:layout_marginTop="-3dp"
+            android:text="Home:"
+            android:textColor="@color/llGreyColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvHome"
+            android:layout_alignLeft="@+id/tvHome"
+            android:text="date &amp; time"
+            android:textColor="@color/llGreyColor"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/tvHomeCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAway"
+            android:layout_alignBottom="@+id/tvAway"
+            android:layout_toRightOf="@+id/tvAway"
+            android:text="Command 1"
+            android:textColor="@color/clBlue"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAwayCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvHome"
+            android:layout_alignBottom="@+id/tvHome"
+            android:layout_toRightOf="@+id/tvHome"
+            android:text="Command 2"
+            android:textColor="@color/clOrange"
+            android:textSize="6pt"
+            android:textStyle="bold" android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/tvHomeCommand"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_calc" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llPantefly"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlCapt"
+        android:layout_marginTop="1dp" android:background="@color/llGreyColor">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:text="Sportbook"
+            android:textColor="@color/llWhiteColor"
+            android:textSize="7pt"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:text="ML" android:textColor="@color/llWhiteColor" android:textSize="7pt"/>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="85dp"
+            android:layout_height="fill_parent"
+            android:text="SL"
+            android:textColor="@color/llWhiteColor"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="85dp"
+            android:layout_height="fill_parent"
+            android:text="Total"
+            android:textColor="@color/llWhiteColor"
+            android:textSize="7pt" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOdds"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llPantefly" >
+    </ListView>
+
+</RelativeLayout>
